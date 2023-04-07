@@ -1,4 +1,4 @@
-# ISRO-API-APP
+# ISRO-API-APP(THIS PROJECT IS PARTIALLY COMPLETED)
 ![image](https://img.shields.io/badge/github-black)
 
 
