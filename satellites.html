@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Github Profile Fetch Api</title>
   </head>
-  <body>
-    <div class="container">
+  <body class="spacepage">
+    <div class="container col">
       <div class="search-area">
-        <input
+        <input class="input_box"
           type="text"
           name=""
           id="username"
-          countryholder="Enter Github Username"
+          placeholder="Enter Country name"
           autocomplete="off"
         />
-        <button onclick="getDetails();">Get Details</button>
+        <button class="btn" onclick="getDetails();">Get Details</button>
       </div>
       <div class="output-container" id="output">
       </div>
@@ -40,7 +40,8 @@
             if (country_name.toUpperCase() == input_name.toUpperCase()) {
               Centers.push(data.customer_satellites[i]);
               const html_element = `
-                            <div class="">
+                            <div class="out_div sat">
+                              <img src="./images/satalight.png"  class="building" alt="" />
                                 <div>
                                     <h1>Id:${data.customer_satellites[i].id}</h1>
                                     <h2>Country:${data.customer_satellites[i].country}</h2>

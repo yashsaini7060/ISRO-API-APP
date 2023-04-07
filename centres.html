@@ -8,16 +8,16 @@
     <title>Github Profile Fetch Api</title>
   </head>
   <body class="spacepage">
-    <div class="">
+    <div class="container col">
       <div class="search-area">
-        <input
+        <input class="input_box"
           type="text"
           name=""
           id="username"
           placeholder="Enter State name"
           autocomplete="off"
         />
-        <button onclick="getDetails();">Get Centres</button>
+        <button class="btn" onclick="getDetails();">Get Centres</button>
       </div>
       <div class="output-container" id="output"></div>
     </div>
@@ -36,7 +36,7 @@
             console.log(centere_name + " " + input_name);
             if (centere_name.toUpperCase() == input_name.toUpperCase()) {
               const html_element = `
-                            <div class="">
+                            <div class="out_div">
                                 <img src="./images/building.png"  class="building" alt="" />
                                 <div>
                                     <h1>Name:${data.centres[i].name}</h1>

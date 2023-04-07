@@ -28,11 +28,74 @@ a{
   font-size: 1.3rem;
 }
 
+.col{
+  flex-direction: column;
+  height: auto;
+}
+
+
 
 /* CENTURES PAGE */
-.building{
-  height: 4rem;
+
+.search-area{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4F4557;
+  height: 8rem;
+  width: 45rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
 }
+
+.input_box{
+  width: 75%;
+  height: 3rem;
+  background-color: #393646;
+  color: #F4EEE0;
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+  border-radius: 10px;
+
+}
+.btn{
+  height: 3rem;
+  margin-left: 5px;
+  font-size: 16px;
+  color: #F4EEE0;
+  background-color: #393646;
+  border: none;
+  border-radius: 10px;
+}
+
+.out_div{
+  display: flex;
+  align-items: center;
+  color: #F4EEE0;
+  background-color: #4F4557;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.building{
+  height: 10rem;
+}
+
+
+/* SATALIGHTS PAGE */
+
+.sat{
+  width: 30rem;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
 
 
 
