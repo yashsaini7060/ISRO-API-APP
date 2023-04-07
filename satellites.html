@@ -44,13 +44,11 @@
                             <div class="out_div sat">
                               <img src="./images/satalight.png"  class="building" alt="" />
                                 <div>
-                                    <h1>Id:${data.customer_satellites[i].id}</h1>
-                                    <h2>Country:${data.customer_satellites[i].country}</h2>
-                                    <h2>Launch Date:${data.customer_satellites[i].launch_date}</h2>
-                                    <h2>Mass:${data.customer_satellites[i].mass}</h2>
-                                    <h2>Launcher:${data.customer_satellites[i].launcher}</h2>
-
-                                    
+                                    <h1 class="out_heading">Id: ${data.customer_satellites[i].id}</h1>
+                                    <h2 class="out_subheading">Country: ${data.customer_satellites[i].country}</h2>
+                                    <h2 class="out_subheading">Launch Date: ${data.customer_satellites[i].launch_date}</h2>
+                                    <h2 class="out_subheading">Mass: ${data.customer_satellites[i].mass}</h2>
+                                    <h2 class="out_subheading">Launcher: ${data.customer_satellites[i].launcher}</h2>
                                 </div>
                             </div>`;
               htmlCodeArray.push(html_element);
