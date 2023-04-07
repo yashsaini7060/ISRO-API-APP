@@ -2,10 +2,8 @@
 ![image](https://img.shields.io/badge/github-black)
 
 
-# GIthub-Profile-Vewer [live Link](https://glowing-dusk-731b48.netlify.app/)
+# ISRO-API-APP [live Link](https://glowing-dusk-731b48.netlify.app/)
 
-
-**Name:** Yash Kumar
 
 **Name:** Yash Kumar
 
