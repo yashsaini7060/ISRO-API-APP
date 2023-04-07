@@ -30,6 +30,7 @@
       fetch(`https://isro.vercel.app/api/centres`).then((response) =>
         response.json().then((data) => {
           const htmlCodeArray = [];
+          htmlCodeArray.push(`<h1 class="heading">Centres List</h1>`)
           let i = 0;
           while (i < data.centres.length) {
             const centere_name = data.centres[i].State;

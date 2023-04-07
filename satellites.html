@@ -31,6 +31,7 @@
       fetch(`https://isro.vercel.app/api/customer_satellites`).then((response) =>
         response.json().then((data) => {
           const htmlCodeArray = [];
+          htmlCodeArray.push(`<h1 class="heading">Satellites List</h1>`)
           const Centers = [];
           let i = 0;
 
