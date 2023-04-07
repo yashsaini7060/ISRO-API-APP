@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rockets/Launches</title>
 </head>
-<body>
-  
+<body class="spacepage">
+    <div class="data" id="spacecrafts">
+
+    </div>
 </body>
+<script>
+    const parentDiv = document.getElementById('spacecrafts');
+    fetch(`https://isro.vercel.app/api/launchers`)
+    .then(response=>response.json().then(data=>{
+      // console.log(data)
+      const htmlCodeArray = [];
+      for (let i = 0; i < data.launchers.length; i++) {
+        // console.log(data.launchers[i].id)
+        const html_element=`<div class="itemsdiv">
+          <img src="./images/rocket.png" class="rocket" alt="" />
+          <h3 class="rocket_name">${data.launchers[i].id}</h3>
+          </div>`;
+        htmlCodeArray.push(html_element)
+      }
+      console.log(htmlCodeArray)
+      htmlCodeArray.forEach(htmlCode => {
+      const newDiv = document.createElement('div');
+      newDiv.innerHTML = htmlCode;
+      parentDiv.appendChild(newDiv);
+      });
+            
+    }))
+
+</script>
 </html>
