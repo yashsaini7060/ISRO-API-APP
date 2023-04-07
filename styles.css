@@ -1,3 +1,4 @@
+
 .container {
   display: flex;
   justify-content: center;
@@ -5,8 +6,11 @@
   height: 100vh;
 }
 .square {
-  width: 20rem;
-  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22rem;
+  height: 22rem;
   background-color: #4F4557;
   margin: 10px;
   border-radius: 10%;
@@ -16,7 +20,13 @@ a{
   color: #F4EEE0;
 }
 
+.home_img{
+  width: 80%;
+}
 
+.home_heading{
+  font-size: 1.3rem;
+}
 
 
 /* CENTURES PAGE */
