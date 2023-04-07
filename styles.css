@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.square {
+  width: 20rem;
+  height: 20rem;
+  background-color: #f0f0f0;
+  margin: 10px;
+  border-radius: 10%;
+}
+
+
+
+.spacepage{
+  background-color: #393646;
+}
+
+.data{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.rocket{
+  height: 5rem;
+}
+
+.data>div{
+  width: 10rem;
+  font-size: 10px;
+  background-color: #4F4557;
+  margin: 5px;
+}
+
+.itemsdiv{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  color: #F4EEE0;
+}
+
+.rocket_name{
+  margin-top: 20px;
+}
